@@ -13,8 +13,6 @@ export const FormControlComponent = ({
   helper,
   min,
   max,
-  onChange,
-  value,
 }) => {
   return (
     <FormControl isInvalid={errors}>
@@ -24,8 +22,6 @@ export const FormControlComponent = ({
           placeholder={placeholder}
           _placeholder={{ color: "#778ca3" }}
           {...register}
-          onChange={onChange}
-          value={value}
           type="text"
           variant={"filled"}
           border={errors ? "2px solid #FF530D" : "2px solid #000"}
