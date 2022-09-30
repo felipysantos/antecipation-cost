@@ -1,5 +1,5 @@
 # Antecipation Cost
-Desenvolvimento de uma relação de usuários e contatos, incluindo frontend com React e backend com NodeJS. 
+Desenvolvimento de uma aplicação que calcula o custo de antecipação de entrega de um produto encomendado.
 
 ## Principais linguagens e tecnologias utilizadas
 
