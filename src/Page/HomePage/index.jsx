@@ -1,5 +1,13 @@
 import { FormControlComponent } from "../../Components/FormControl";
-import { Button, Center, Heading, Stack, Text, VStack } from "@chakra-ui/react";
+import {
+  Button,
+  Center,
+  Heading,
+  Stack,
+  Text,
+  VStack,
+  useToast,
+} from "@chakra-ui/react";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";
@@ -8,8 +16,8 @@ import { useContext } from "react";
 import { DateContext } from "../../Providers";
 
 export const HomePage = () => {
-  const { isDate, setDate } = useContext(DateContext);
-
+  const { isDate, setDate, isLoading, setLoading } = useContext(DateContext);
+  const toast = useToast();
   const signUpSchema = yup.object().shape({
     amount: yup.string().required("Campo obrigatório"),
     installments: yup.string().required("Campo obrigatório"),
@@ -30,7 +38,7 @@ export const HomePage = () => {
       mdr: parseInt(dataForm.mdr),
       days: [1, 15, 30, 90],
     };
-    sendDataForm({ data, isDate, setDate });
+    sendDataForm({ data, isDate, setDate, toast, isLoading, setLoading });
   };
   return (
     <Stack
@@ -40,10 +48,10 @@ export const HomePage = () => {
     >
       <VStack
         borderLeftRadius={8}
-        pt={8}
+        pt={{ base: 0, lg: 8 }}
         h={"500px"}
         px={{ base: 0, lg: 10 }}
-        bgColor={"#fff  "}
+        bgColor={"#fff"}
       >
         <Heading>Simule sua Antecipação</Heading>
         <form onSubmit={handleSubmit(handleCreateData)}>
@@ -84,7 +92,7 @@ export const HomePage = () => {
 
       <VStack
         borderRadius={{ base: 8, lg: 0 }}
-        borderRightRadius={{ base: 0, lg: 8 }}
+        borderRightRadius={{ base: 8, lg: 8 }}
         bgColor={"#778ca3"}
         color={"#fff"}
         fontStyle={"italic"}

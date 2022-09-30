@@ -22,7 +22,7 @@ export const FormControlComponent = ({
           placeholder={placeholder}
           _placeholder={{ color: "#778ca3" }}
           {...register}
-          type="text"
+          type="number"
           variant={"filled"}
           border={errors ? "2px solid #FF530D" : "2px solid #000"}
           bgColor={"#e1e1e1"}
