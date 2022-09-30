@@ -1,4 +1,4 @@
-# Customer and contacts
+# Antecipation Cost
 Desenvolvimento de uma relação de usuários e contatos, incluindo frontend com React e backend com NodeJS. 
 
 ## Principais linguagens e tecnologias utilizadas
