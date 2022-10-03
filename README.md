@@ -26,6 +26,8 @@ Desenvolvimento de uma aplicação que calcula o custo de antecipação de entre
 
 <br>
 
+
+
 <h2 id=escopo>Escopo do projeto</h2> 
 <p>
     A aplicação funciona como uma calculadora de antecipação, para caso os clientes optem por antecipar o recebimento de suas encomendas.
@@ -41,8 +43,11 @@ Desenvolvimento de uma aplicação que calcula o custo de antecipação de entre
     <li>Instale as dependências através do comando **yarn**</li>
     <li>Inicie a aplicação através do comando **yarn start**, por padrão, iniciará pelo localhost:3000</li>
 </ol>
- 
-    
+
+<br><br>
+
+<h3>Link do projeto</h3>
+<p><a href=https://vercel.com/felipysantos/antecipation-cost/ target=_blank>go</a></p>
     
 <br><br>
 
