@@ -6,11 +6,13 @@ Desenvolvimento de uma aplicação que calcula o custo de antecipação de entre
 
 ## Tópicos
 
-- [Descrição do projeto](#tecnologias-utilizadas)
+- [Ferramentas](#ferramentas)
 
 - [Escopo do projeto](#escopo)
 
 - [Instruções](#instrucoes)
+
+- [Canais de comunicação](#canais)
 
 
 ## Principais linguagens e tecnologias utilizadas
@@ -28,30 +30,28 @@ Desenvolvimento de uma aplicação que calcula o custo de antecipação de entre
 
 <br>
 
-<h2 id=escopo>Escopo</h2> 
-
-A funcionalidade do projeto é bem simples, o sistema de cadastro de usuários envia para o banco de dados as informações coletadas no formulário, basta passar em todas as verificações. O login faz o envio do formulário, acessa o banco de dados e retorna o usuário, caso exista, e seus contatos.
-A tela de perfil retorna as informações do usuário, tais como nome, email e número de telefone, tendo a opção de editá-las.
-Na tela de contatos, você visualiza a lista de contatos, podendo adicionar novos contatos ou deletá-los.
-
+<h2 id=escopo>Escopo do projeto</h2> 
+<p>
+    A aplicação funciona como uma calculadora de antecipação, para caso os clientes optem por antecipar o recebimento de suas encomendas.
+</p>
 <br>
 
 
 <h2 id=instrucoes>Instruções</h2>
 
 <ol>
-    <li>1. Clone o repositório</li>
-    <li>2. Acesse a pasta **frontend**</li>
-    <li>3. Instale as dependências através do comando **yarn**</li>
-    <li>4. A aplicação por padrão, faz a requisição através de uma API, pelo arquivo **src/services/api.js**</li>
-    <li>5. Inicie a aplicação através do comando **yarn start**</li>
+    <li>Clone o repositório</li>
+    <li>Acesse a pasta **frontend**</li>
+    <li>Instale as dependências através do comando **yarn**</li>
+    <li>A aplicação por padrão, faz a requisição através de uma API, pelo arquivo **src/services/api.js**</li>
+    <li>Inicie a aplicação através do comando **yarn start**</li>
 </ol>
  
     
     
 <br><br>
 
-## Canais de comunicação
+<h3 id=canais> Canais de comunicação </h3>
 
 **Felipy Santos**: **Desenvolvedor full-stack | Designer** 
 
