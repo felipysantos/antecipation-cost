@@ -6,7 +6,7 @@ Desenvolvimento de uma aplicação que calcula o custo de antecipação de entre
 
 ## Tópicos
 
-- [Ferramentas](#ferramentas)
+- [Ferramentas utilizadas](#ferramentas)
 
 - [Escopo do projeto](#escopo)
 
@@ -14,13 +14,9 @@ Desenvolvimento de uma aplicação que calcula o custo de antecipação de entre
 
 - [Canais de comunicação](#canais)
 
-
-## Principais linguagens e tecnologias utilizadas
-
 <br>
 
-
-<h2 id=ferramentas>Ferramentas</h2> 
+<h2 id=ferramentas>Ferramentas utilizadas</h2> 
 
 - React (principal biblioteca para construção do site)
 - ContextAPI (para gerenciamento de estados)
@@ -43,8 +39,7 @@ Desenvolvimento de uma aplicação que calcula o custo de antecipação de entre
     <li>Clone o repositório</li>
     <li>Acesse a pasta **frontend**</li>
     <li>Instale as dependências através do comando **yarn**</li>
-    <li>A aplicação por padrão, faz a requisição através de uma API, pelo arquivo **src/services/api.js**</li>
-    <li>Inicie a aplicação através do comando **yarn start**</li>
+    <li>Inicie a aplicação através do comando **yarn start**, por padrão, iniciará pelo localhost:3000</li>
 </ol>
  
     
