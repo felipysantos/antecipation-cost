@@ -40,11 +40,11 @@ Na tela de contatos, você visualiza a lista de contatos, podendo adicionar novo
 <h2 id=instrucoes>Instruções</h2>
 
 <ol>
-    1. Clone o repositório
-    2. Acesse a pasta **frontend**
-    3. Instale as dependências através do comando **yarn**
-    4. A aplicação por padrão, faz a requisição através de uma API, pelo arquivo **src/services/api.js**
-    5. Inicie a aplicação através do comando **yarn start**
+    <li>1. Clone o repositório</li>
+    <li>2. Acesse a pasta **frontend**</li>
+    <li>3. Instale as dependências através do comando **yarn**</li>
+    <li>4. A aplicação por padrão, faz a requisição através de uma API, pelo arquivo **src/services/api.js**</li>
+    <li>5. Inicie a aplicação através do comando **yarn start**</li>
 </ol>
  
     
