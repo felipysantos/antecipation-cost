@@ -4,7 +4,7 @@ export const DateContext = createContext([]);
 
 export const DateProvider = ({ children }) => {
   const [isDate, setDate] = useState([]);
-  const [isLoading, setLoading] = useState(true);
+  const [isLoading, setLoading] = useState(false);
   return (
     <DateContext.Provider
       value={{

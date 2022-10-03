@@ -21,10 +21,10 @@ const timeoutExceeded = ({ toast, data, setDate }) => {
     );
 };
 
-export const sendDataForm = ({ data, toast, setDate }) => {
+export const sendDataForm = ({ data, toast, setDate, setLoading }) => {
   api
     .post("", data)
-    .then((res) => setDate([res.data]))
+    .then((res) => setDate([res.data], setLoading(false)))
     .catch((err) =>
       toast({
         title: err.response.data.message,

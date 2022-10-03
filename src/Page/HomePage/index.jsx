@@ -7,12 +7,13 @@ import {
   Text,
   VStack,
   useToast,
+  Spinner,
 } from "@chakra-ui/react";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";
 import { sendDataForm } from "../../Service/api";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { DateContext } from "../../Providers";
 
 export const HomePage = () => {
@@ -24,6 +25,10 @@ export const HomePage = () => {
     mdr: yup.string().required("Campo obrigatório"),
   });
 
+  useEffect(() => {
+    console.log(isLoading);
+  }, [isLoading]);
+
   const {
     register,
     handleSubmit,
@@ -31,14 +36,16 @@ export const HomePage = () => {
   } = useForm({
     resolver: yupResolver(signUpSchema),
   });
+
   const handleCreateData = (dataForm) => {
+    setLoading(true);
     const data = {
       amount: parseInt(dataForm.amount),
       installments: parseInt(dataForm.installments),
       mdr: parseInt(dataForm.mdr),
       days: [1, 15, 30, 90],
     };
-    sendDataForm({ data, isDate, setDate, toast, isLoading, setLoading });
+    sendDataForm({ data, isDate, setDate, toast, setLoading });
   };
   return (
     <Stack
@@ -103,10 +110,16 @@ export const HomePage = () => {
       >
         <Heading>Você receberá:</Heading>
         <Center flexDir={"column"} justifyContent={"space-around"} h={"50vh"}>
-          <Text>Amanhã: R$ {isDate.length && isDate[0][1]},00</Text>
-          <Text>Em 15 dias: R$ {isDate.length && isDate[0][15]},00</Text>
-          <Text>Em 30 dias: R$ {isDate.length && isDate[0][30]},00</Text>
-          <Text>Em 90 dias: R$ {isDate.length && isDate[0][90]},00</Text>
+          {isLoading ? (
+            <Spinner size="xl" />
+          ) : (
+            <>
+              <Text>Amanhã: R$ {isDate.length && isDate[0][1]},00</Text>
+              <Text>Em 15 dias: R$ {isDate.length && isDate[0][15]},00</Text>
+              <Text>Em 30 dias: R$ {isDate.length && isDate[0][30]},00</Text>
+              <Text>Em 90 dias: R$ {isDate.length && isDate[0][90]},00</Text>
+            </>
+          )}
         </Center>
       </VStack>
     </Stack>
