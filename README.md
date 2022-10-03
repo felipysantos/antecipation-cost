@@ -46,9 +46,9 @@ Desenvolvimento de uma aplicação que calcula o custo de antecipação de entre
 
 <br><br>
 
-<h3>Link do projeto</h3>
-<p><a href=https://vercel.com/felipysantos/antecipation-cost/ target=_blank>go</a></p>
-    
+<h3>Links do projeto</h3>
+<p><a href="https://vercel.com/felipysantos/antecipation-cost" target="_blank">Vercel</a></p>
+<p><a href="https://github.com/felipysantos/antecipation-cost" target="_blank">Github</a></p>    
 <br><br>
 
 <h3 id=canais> Canais de comunicação </h3>
