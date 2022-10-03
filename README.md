@@ -1,4 +1,6 @@
 # Antecipation Cost
+![Status Website](https://img.shields.io/website?down_message=red&style=for-the-badge&up_color=green&up_message=online&url=https%3A%2F%2Fspace-flight-news-delta.vercel.app%2F)
+
 Desenvolvimento de uma aplicação que calcula o custo de antecipação de entrega de um produto encomendado.
 
 ## Principais linguagens e tecnologias utilizadas
